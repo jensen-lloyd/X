@@ -10,7 +10,7 @@ A new Flutter project.
 - [ ]  calendar
 - [ ]  RCS
 - [ ]  notes
-- Support for other messaging services
+    Support for other messaging services
     - [ ]  discord
     - [ ]  FB messenger
     - [ ]  IG messenger
