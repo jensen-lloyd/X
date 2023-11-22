@@ -3,30 +3,82 @@ import 'package:flutter/material.dart';
 void main()
 {
     runApp(MaterialApp(
-            home: Home(),
+            home: MessageMenu(),
             ));
 }
 
 
-class Home extends StatelessWidget
+
+
+class MenuDrawer extends StatefulWidget {
+  @override
+  _MenuDrawerState createState() => _MenuDrawerState();
+}
+
+
+class _MenuDrawerState extends State<MenuDrawer> 
 {
     @override
-    Widget build(BuildContext context)
-    {
-        return Scaffold(
-               appBar: PreferredSize(
-                   preferredSize: Size.fromHeight(40),
-               
-                   child: AppBar(  
-                        title: Row(
+    _MenuDrawerState createState() => _MenuDrawerState();
+    Widget build(AppBarTitle) {
+        return Row(
+            drawer: Drawer(
+                child: ListView(
+                // Important: Remove any padding from the ListView.
+                padding: EdgeInsets.zero,
+                children: [
+                    const DrawerHeader(
+                        decoration: BoxDecoration(
+                        color: Colors.blue,
+                        ),
+                        child: Text('Drawer Header'),
+                    ),
+                    
+                    ListTile(
+                        leading: Icon(
+                            Icons.home,
+                        ),
+                        title: const Text('Page 1'),
+                        onTap: () {
+                            Navigator.pop(context);
+                        },
+                    ),
+                    
+                    ListTile(
+                        leading: Icon(
+                        Icons.train,
+                        ),
+                        title: const Text('Page 2'),
+                        onTap: () {
+                            Navigator.pop(context);
+                        },
+                    ),
+            ],
+          ),
+        ),
+        
+        title: Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
+                            
+                            
+                            
+                            
                                 Padding(
+                                    padding: EdgeInsets.only(left: 5), 
+                                    child: _MenuDrawerState(),
+                                 ),
+                                      
+                       
+            
+                                    
+                                    
+                                    Padding(
                                     padding: EdgeInsets.only(left: 10),
                                     child: Text(
                                            'X',
                                            style: TextStyle(
-                                               fontWeight: FontWeight.bold,
+                                               fontWeight: FontWeight.w600,
                                                fontStyle: FontStyle.italic,
                                                fontSize: 40,
                                                ),
@@ -50,9 +102,11 @@ class Home extends StatelessWidget
                                         Icons.arrow_drop_down,
                                         size: 25,
                                         color: Colors.lightBlue[100],
-                                        ),
                                     ),
+                                ),
+                                
                             ],
+                            
                         ),
 
                         centerTitle: false, 
@@ -61,6 +115,41 @@ class Home extends StatelessWidget
                 ),
 
 
+        
+        
+        
+        
+        
+        body: Center(
+            child: Column(
+                children: [
+                    SizedBox(
+                    height: 50,
+                    ),
+                ],
+            ),
+        ),
+        
+        
+        
+        
+        
+      );
+  }
+}
+
+
+class MessageMenu extends StatelessWidget
+{
+    const MessageMenu({super.key});          
+                  
+    @override
+    Widget build(BuildContext context) {
+        return Scaffold(
+            appBar: PreferredSize(
+                   preferredSize: Size.fromHeight(40),
+                   child: AppBar(  
+                        
 
 
 
