@@ -136,15 +136,25 @@ class MessageList extends StatelessWidget {
             
             itemCount: 12,
             itemBuilder: (BuildContext context, int index) {
-                //return ListTile(
-                    
-                    
-                    
-                    
-                    return Container(
+                return InkWell(
+
+
+                    onTap: () {
+            	        print('Message tapped!');
+            	    },
+            	    
+                    child: Container(
                         //margin: EdgeInsets.fromLTRB(0, 25, 0, 0),
-                        color: Colors.grey[400],
                         height: 80,
+                        decoration: BoxDecoration(
+                            color: Color.fromRGBO(200, 200, 200, 1.0),
+                            border: Border.all(
+                                color: Color.fromRGBO(110, 110, 120, 1.0),
+                                width: 1, 
+                            ),
+                        ),
+              
+              
                         child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
@@ -206,14 +216,14 @@ class MessageList extends StatelessWidget {
                                 ),
                             ],
                         ),
-                    /*
+                        
+                        
+                        
+
                     ),
                     
                     
-            	    onTap: () {
-            	        print('Message tapped!');
-            	    }
-            	    */
+            	    
                 );
             },
         );
