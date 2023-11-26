@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'functions.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -15,7 +16,12 @@ class DrawerContent extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: [
           const DrawerHeader(
-            child: Text('drawer'),
+            child: Text(
+                'Features? \nApplets? \nPlugins? \nSegments?',
+                style: TextStyle(
+                    //fontWeight: FontWeight.w600,
+                    fontSize: 32,
+                ),
             ),
             
           ListTile(
@@ -56,7 +62,7 @@ class CustomAppBar extends StatelessWidget
               Padding(
                 padding: EdgeInsets.only(left: 0),
                 child: Text(
-                  'X',
+                  'XYZ',
                   style: TextStyle(
                     fontWeight: FontWeight.w600,
                     fontStyle: FontStyle.italic,
@@ -65,7 +71,7 @@ class CustomAppBar extends StatelessWidget
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(left: 0),
+                padding: EdgeInsets.only(left: 10),
                 child: Text(
                   'Platform',
                   style: TextStyle(
@@ -89,38 +95,6 @@ class CustomAppBar extends StatelessWidget
     }
 }
 
-/*
-class MenuDrawer extends StatefulWidget {
-  @override
-  _MenuDrawerState createState() => _MenuDrawerState();
-}
-
-class _MenuDrawerState extends State<MenuDrawer> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      drawer: DrawerContent(),
-      appBar: PreferredSize(
-        preferredSize: Size.fromHeight(40),
-        child: AppBar(
-          title: Text('Your App Title'),
-          centerTitle: false,
-          backgroundColor: Colors.lightBlue[800],
-        ),
-      ),
-      body: Center(
-        child: Column(
-          children: [
-            SizedBox(
-              height: 50,
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-*/
 
 class MessageMenu extends StatelessWidget {
   const MessageMenu({Key? key});
@@ -129,85 +103,107 @@ class MessageMenu extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(40),
+        preferredSize: Size.fromHeight(50),
         child: CustomAppBar(),
         ),
         
       drawer: DrawerContent(),  
         
         
-      body: Column(
-        children: [
-          Container(
-            margin: EdgeInsets.fromLTRB(0, 25, 0, 0),
-            color: Colors.grey[400],
-            height: 80,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Container(
-                  padding: EdgeInsets.fromLTRB(0, 11, 0, 11),
-                  margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                  child: CircleAvatar(
-                    radius: 30,
-                    backgroundImage: Image.network(
-                            'https://cdn.discordapp.com/avatars/579611812581081089/a2a4147ba689572077ef9ef1ca221cf4.webp?size=128')
-                        .image,
-                  ),
-                ),
-                Column(
-                  children: [
-                    Container(
-                      padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
-                      margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                      width: (MediaQuery.of(context).size.width) * 0.7,
-                      child: Text(
-                        'Jensen Lloydfgdfgfdgdgdfgfgfdgfdgdfgfdgfdgfdgfdgfdgdfgfd',
-                        style: TextStyle(
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20,
-                          color: Colors.black,
-                        ),
-                        softWrap: true,
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                    ),
-                    Container(
-                      padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                      margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                      width: (MediaQuery.of(context).size.width) * 0.7,
-                      height: 40,
-                      child: Text(
-                        'Message preview blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah ',
-                        style: TextStyle(
-                          fontWeight: FontWeight.w400,
-                          fontSize: 15,
-                          color: Colors.black,
-                        ),
-                        softWrap: true,
-                        overflow: TextOverflow.clip,
-                      ),
-                    ),
-                  ],
-                ),
-                Container(
-                  padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                  margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
-                  child: Text(
-                    '8m',
-                    style: TextStyle(
-                      fontWeight: FontWeight.w400,
-                      fontSize: 15,
-                      color: Colors.black,
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ],
-      ),
+      body: MessageList(),
+
+
     );
-  }
+    }
+}
+
+
+
+
+
+class MessageList extends StatefulWidget {
+    @override
+    _MessageListState createState() => _MessageListState();
+}
+
+class _MessageListState extends State<MessageList> {
+    //const MessageList({Key? key});
+    @override
+    Widget build(BuildContext context) {
+        return Container(
+            child: Column(
+                children: [
+                    Container(
+                        margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                        color: Colors.grey[400],
+                        height: 80,
+                        child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                            Container(
+                                padding: EdgeInsets.fromLTRB(0, 11, 0, 11),
+                                margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                                child: CircleAvatar(
+                                    radius: 30,
+                                    backgroundImage: Image.network('https://cdn.discordapp.com/avatars/579611812581081089/a2a4147ba689572077ef9ef1ca221cf4.webp?size=128').image,
+                                ),
+                            ),
+                        Column(
+                        children: [
+                            Container(
+                                padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
+                                margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                                width: (MediaQuery.of(context).size.width) * 0.7,
+                                child: Text(
+                                    'Jensen Lloyd',
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 20,
+                                        color: Colors.black,
+                                    ),
+                                    softWrap: true,
+                                    overflow: TextOverflow.ellipsis,
+                                ),
+                            ),
+
+
+                            Container(
+                                padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                                margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                                width: (MediaQuery.of(context).size.width) * 0.7,
+                                height: 40,
+                                child: Text(
+                                    'Message preview blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah ',
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 15,
+                                        color: Colors.black,
+                                    ),
+                                    softWrap: true,
+                                    overflow: TextOverflow.clip,
+                                ),
+                            ),
+                        ],
+                        ),
+
+                        Container(
+                            padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                            margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
+                            child: Text(
+                                '8m',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.w400,
+                                    fontSize: 15,
+                                    color: Colors.black,
+                                ),
+                            ),
+                        ),
+                    ],
+                    ),
+                ),
+            ],
+            ),
+        );
+    }
 }
 
