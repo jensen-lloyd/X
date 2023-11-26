@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'functions.dart';
 
 void main() {
-  runApp(MaterialApp(
-    home: MessageMenu(),
-  ));
+
+    runApp(MaterialApp(
+        home: MessageMenu(),
+    ));
 }
 
 
@@ -22,22 +23,23 @@ class DrawerContent extends StatelessWidget {
                     //fontWeight: FontWeight.w600,
                     fontSize: 32,
                 ),
+              ),
             ),
             
           ListTile(
             leading: Icon(
-              Icons.home,
+              Icons.forum,
             ),
-            title: const Text('Page 1'),
+            title: const Text('Messages'),
             onTap: () {
               Navigator.pop(context);
             },
           ),
           ListTile(
             leading: Icon(
-              Icons.train,
+              Icons.settings,
             ),
-            title: const Text('Page 2'),
+            title: const Text('Settings'),
             onTap: () {
               Navigator.pop(context);
             },
@@ -121,89 +123,100 @@ class MessageMenu extends StatelessWidget {
 
 
 
-class MessageList extends StatefulWidget {
-    @override
-    _MessageListState createState() => _MessageListState();
-}
 
-class _MessageListState extends State<MessageList> {
+class MessageList extends StatelessWidget {
     //const MessageList({Key? key});
+
+    List<List<String>>? messages = load_messages(0); 
+
     @override
     Widget build(BuildContext context) {
-        return Container(
-            child: Column(
-                children: [
-                    Container(
-                        margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
+        return ListView.builder(
+
+            
+            itemCount: 12,
+            itemBuilder: (BuildContext context, int index) {
+                //return ListTile(
+                    
+                    
+                    
+                    
+                    return Container(
+                        //margin: EdgeInsets.fromLTRB(0, 25, 0, 0),
                         color: Colors.grey[400],
                         height: 80,
                         child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
-                            Container(
-                                padding: EdgeInsets.fromLTRB(0, 11, 0, 11),
-                                margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                                child: CircleAvatar(
-                                    radius: 30,
-                                    backgroundImage: Image.network('https://cdn.discordapp.com/avatars/579611812581081089/a2a4147ba689572077ef9ef1ca221cf4.webp?size=128').image,
-                                ),
-                            ),
-                        Column(
-                        children: [
-                            Container(
-                                padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
-                                margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                                width: (MediaQuery.of(context).size.width) * 0.7,
-                                child: Text(
-                                    'Jensen Lloyd',
-                                    style: TextStyle(
-                                        fontWeight: FontWeight.w500,
-                                        fontSize: 20,
-                                        color: Colors.black,
+                                Container(
+                                    //padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                                    //margin: EdgeInsets.fromLTRB(0, 11, 0, 11),
+                                    child: CircleAvatar(
+                                        radius: 30,
+                                        backgroundImage: Image.network('https://cdn.discordapp.com/avatars/579611812581081089/a2a4147ba689572077ef9ef1ca221cf4.webp?size=128').image,
                                     ),
-                                    softWrap: true,
-                                    overflow: TextOverflow.ellipsis,
                                 ),
-                            ),
-
-
-                            Container(
-                                padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                                margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                                width: (MediaQuery.of(context).size.width) * 0.7,
-                                height: 40,
-                                child: Text(
-                                    'Message preview blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah ',
-                                    style: TextStyle(
-                                        fontWeight: FontWeight.w400,
-                                        fontSize: 15,
-                                        color: Colors.black,
+                                Column(
+                                    children: [
+                                        Container(
+                                            //padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
+                                            //margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                                            width: (MediaQuery.of(context).size.width) * 0.7,
+                                            child: Text(
+                                                'Jensen Lloydfgdfgfdgdgdfgfgfdgfdgdfgfdgfdgfdgfdgfdgdfgfd',
+                                                style: TextStyle(
+                                                    fontWeight: FontWeight.w500,
+                                                    fontSize: 20,
+                                                    color: Colors.black,
+                                                ),
+                                                softWrap: true,
+                                                overflow: TextOverflow.ellipsis,
+                                            ),
+                                        ),
+                                        
+                                        Container(
+                                            //padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                                            //margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                                            width: (MediaQuery.of(context).size.width) * 0.7,
+                                            height: 40,
+                                            child: Text(
+                                                'Message preview blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah ',
+                                                style: TextStyle(
+                                                    fontWeight: FontWeight.w400,
+                                                    fontSize: 15,
+                                                    color: Colors.black,
+                                                ),
+                                                softWrap: true,
+                                                overflow: TextOverflow.clip,
+                                            ),
+                                        ),
+                                    ],
+                                ),
+                                Container(
+                                    //padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                                    //margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
+                                    child: Text(
+                                        '8m',
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.w400,
+                                            fontSize: 15,
+                                            color: Colors.black,
+                                        ),
                                     ),
-                                    softWrap: true,
-                                    overflow: TextOverflow.clip,
                                 ),
-                            ),
-                        ],
+                            ],
                         ),
-
-                        Container(
-                            padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                            margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
-                            child: Text(
-                                '8m',
-                                style: TextStyle(
-                                    fontWeight: FontWeight.w400,
-                                    fontSize: 15,
-                                    color: Colors.black,
-                                ),
-                            ),
-                        ),
-                    ],
+                    /*
                     ),
-                ),
-            ],
-            ),
+                    
+                    
+            	    onTap: () {
+            	        print('Message tapped!');
+            	    }
+            	    */
+                );
+            },
         );
-    }
+    }   
 }
 
