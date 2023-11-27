@@ -37,7 +37,7 @@ Is intended to bring a privacy-first, decentralised, and  suite of services to e
 ## To do
 #### Navigation
 - [X]  Add more dummy converastions and test scrolling in message menu
-- [ ]  Rename *messages* variable to *conversations*
+- [X]  Rename *messages* variable to *conversations*
 - [ ]  Create settings page
 - [ ]  Setup menu-drawer buttons to route between pages
 - [ ]  Create conversation page 

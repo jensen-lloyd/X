@@ -189,7 +189,7 @@ class MessageList extends StatelessWidget {
                                         Container(
                                             padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                                             margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                                            width: (MediaQuery.of(context).size.width) * 0.7,
+                                            width: (MediaQuery.of(context).size.width) * 0.69,
                                             height: 40,
                                             child: Text(
                                                 conversations[index][2],
