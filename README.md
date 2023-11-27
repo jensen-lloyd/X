@@ -57,7 +57,7 @@ Is intended to bring a privacy-first, decentralised, and  suite of services to e
 		- [ ]  vertical bar for sent, 2nd vert for delivered, both bold for read 
 		[read not applicable to SMS, sadly lol]
 	- [ ]  Setup message receiving
-	       Do notif stuff here
+	       <br /> **Do notification stuff here**
 	- [ ]  Highlight conversations with unread messages in message menu
 	- [ ]  Create settings button for each convo (tap & hold)
 	- [ ]  Add option to mute convo (no notif)
