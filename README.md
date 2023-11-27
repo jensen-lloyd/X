@@ -6,7 +6,7 @@ Is intended to bring a privacy-first, decentralised, and  suite of services to e
 <br /> <br />
 
 
-### Functions
+## Features
 - [ ]  alarms
 - [ ]  reminders
 - [ ]  SMS
@@ -34,7 +34,7 @@ Is intended to bring a privacy-first, decentralised, and  suite of services to e
 
 <br /> <br />
 
-### To do
+## To do
 - [ ]  Navigation:
 	- [X]  Add more dummy converastions and test scrolling in message menu
 	- [ ]  Rename messages to conversations
@@ -46,6 +46,7 @@ Is intended to bring a privacy-first, decentralised, and  suite of services to e
 	- [ ]  Create platform dropdown (SMS & discord to start with)
 	- [ ]  Create reminders option in menu-drawer
 	- [ ]  Create reminders page
+	
 	
 - [ ]  SMS:
 	- [ ]  Load message history into conversation page (most recent first)
@@ -60,8 +61,10 @@ Is intended to bring a privacy-first, decentralised, and  suite of services to e
 	- [ ]  Add option to mute convo (no notif)
 	- [ ]  
 	
+	
 - [ ]  Notifications:
 	- [ ]  Build notification listener service to create notification when message received
+	
 	
 - [ ]  Reminders:
 	- [ ]  fdjsgfgdf
