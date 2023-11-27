@@ -42,7 +42,7 @@ Is intended to bring a privacy-first, decentralised, and  suite of services to e
 - [ ]  Setup menu-drawer buttons to route between pages
 - [ ]  Create conversation page 
 - [ ]  Get conversation in message menu to route to conversation page for that convo
-<br /> Do SMS stuff here
+<br /> **Do SMS stuff here**
 - [ ]  Create platform dropdown (SMS & discord to start with)
 - [ ]  Create reminders option in menu-drawer
 - [ ]  Create reminders page
