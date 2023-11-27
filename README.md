@@ -35,7 +35,7 @@ Is intended to bring a privacy-first, decentralised, and  suite of services to e
 <br /> <br />
 
 ## To do
-- [ ]  Navigation:
+####Navigation:
 	- [X]  Add more dummy converastions and test scrolling in message menu
 	- [ ]  Rename messages to conversations
 	- [ ]  Create settings page
@@ -47,6 +47,7 @@ Is intended to bring a privacy-first, decentralised, and  suite of services to e
 	- [ ]  Create reminders option in menu-drawer
 	- [ ]  Create reminders page
 	
+<br />
 	
 - [ ]  SMS:
 	- [ ]  Load message history into conversation page (most recent first)
@@ -60,11 +61,13 @@ Is intended to bring a privacy-first, decentralised, and  suite of services to e
 	- [ ]  Create settings button for each convo (tap & hold)
 	- [ ]  Add option to mute convo (no notif)
 	- [ ]  
-	
+
+<br />	
 	
 - [ ]  Notifications:
 	- [ ]  Build notification listener service to create notification when message received
 	
+<br />
 	
 - [ ]  Reminders:
 	- [ ]  fdjsgfgdf
