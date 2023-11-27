@@ -127,14 +127,14 @@ class MessageMenu extends StatelessWidget {
 class MessageList extends StatelessWidget {
     //const MessageList({Key? key});
 
-    List<List<String>> messages = load_messages("discord")!; 
+    List<List<String>> messages = load_messages("sms")!; 
 
     @override
     Widget build(BuildContext context) {
         return ListView.builder(
 
             
-            itemCount: 2,
+            itemCount: messages.length,
             itemBuilder: (BuildContext context, int index) {
                 return InkWell(
 
