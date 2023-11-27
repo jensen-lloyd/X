@@ -36,16 +36,16 @@ Is intended to bring a privacy-first, decentralised, and  suite of services to e
 
 ## To do
 #### Navigation
-	- [X]  Add more dummy converastions and test scrolling in message menu
-	- [ ]  Rename messages to conversations
-	- [ ]  Create settings page
-	- [ ]  Setup menu-drawer buttons to route between pages
-	- [ ]  Create conversation page 
-	- [ ]  Get conversation in message menu to route to conversation page for that convo
-	#####  Do SMS stuff here
-	- [ ]  Create platform dropdown (SMS & discord to start with)
-	- [ ]  Create reminders option in menu-drawer
-	- [ ]  Create reminders page
+- [X]  Add more dummy converastions and test scrolling in message menu
+- [ ]  Rename messages to conversations
+- [ ]  Create settings page
+- [ ]  Setup menu-drawer buttons to route between pages
+- [ ]  Create conversation page 
+- [ ]  Get conversation in message menu to route to conversation page for that convo
+#####  Do SMS stuff here
+- [ ]  Create platform dropdown (SMS & discord to start with)
+- [ ]  Create reminders option in menu-drawer
+- [ ]  Create reminders page
 	
 <br />
 	
