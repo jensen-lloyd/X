@@ -156,11 +156,11 @@ class MessageList extends StatelessWidget {
               
               
                         child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                                 Container(
                                     padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                                    margin: EdgeInsets.fromLTRB(0, 11, 0, 11),
+                                    margin: EdgeInsets.fromLTRB(5, 11, 10, 11),
                                     child: CircleAvatar(
                                         radius: 30,
                                         backgroundImage: Image.network(messages[index][1]).image,
