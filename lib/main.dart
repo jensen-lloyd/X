@@ -18,7 +18,7 @@ class DrawerContent extends StatelessWidget {
         children: [
           const DrawerHeader(
             child: Text(
-                'Features? \nApplets? \nPlugins? \nSegments?',
+                'Features? \nApplets? \nSegments?',
                 style: TextStyle(
                     //fontWeight: FontWeight.w600,
                     fontSize: 32,
@@ -64,28 +64,28 @@ class CustomAppBar extends StatelessWidget
               Padding(
                 padding: EdgeInsets.only(left: 0),
                 child: Text(
-                  'XYZ',
+                  '(logo here)',
                   style: TextStyle(
-                    fontWeight: FontWeight.w600,
-                    fontStyle: FontStyle.italic,
-                    fontSize: 40,
+                    fontWeight: FontWeight.w500,
+                    //fontStyle: FontStyle.italic,
+                    fontSize: 20,
                   ),
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(left: 10),
+                padding: EdgeInsets.only(left: 65),
                 child: Text(
-                  'Platform',
+                  'Discord',
                   style: TextStyle(
-                    fontSize: 32,
+                    fontSize: 26,
                   ),
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(left: 5),
+                padding: EdgeInsets.only(left: 0),
                 child: Icon(
                   Icons.arrow_drop_down,
-                  size: 25,
+                  size: 20,
                   color: Colors.lightBlue[100],
                 ),
               ),
@@ -127,14 +127,14 @@ class MessageMenu extends StatelessWidget {
 class MessageList extends StatelessWidget {
     //const MessageList({Key? key});
 
-    List<List<String>>? messages = load_messages(0); 
+    List<List<String>> messages = load_messages("discord")!; 
 
     @override
     Widget build(BuildContext context) {
         return ListView.builder(
 
             
-            itemCount: 12,
+            itemCount: 2,
             itemBuilder: (BuildContext context, int index) {
                 return InkWell(
 
@@ -159,21 +159,22 @@ class MessageList extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
                                 Container(
-                                    //padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                                    //margin: EdgeInsets.fromLTRB(0, 11, 0, 11),
+                                    padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                                    margin: EdgeInsets.fromLTRB(0, 11, 0, 11),
                                     child: CircleAvatar(
                                         radius: 30,
-                                        backgroundImage: Image.network('https://cdn.discordapp.com/avatars/579611812581081089/a2a4147ba689572077ef9ef1ca221cf4.webp?size=128').image,
+                                        backgroundImage: Image.network(messages[index][1]).image,
                                     ),
                                 ),
                                 Column(
                                     children: [
+                                        //username
                                         Container(
-                                            //padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
-                                            //margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                                            padding: EdgeInsets.fromLTRB(0, 5, 0, 0),
+                                            margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
                                             width: (MediaQuery.of(context).size.width) * 0.7,
                                             child: Text(
-                                                'Jensen Lloydfgdfgfdgdgdfgfgfdgfdgdfgfdgfdgfdgfdgfdgdfgfd',
+                                                messages[index][0],
                                                 style: TextStyle(
                                                     fontWeight: FontWeight.w500,
                                                     fontSize: 20,
@@ -184,13 +185,14 @@ class MessageList extends StatelessWidget {
                                             ),
                                         ),
                                         
+                                        //message preview
                                         Container(
-                                            //padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                                            //margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                                            padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                                            margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
                                             width: (MediaQuery.of(context).size.width) * 0.7,
                                             height: 40,
                                             child: Text(
-                                                'Message preview blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah ',
+                                                messages[index][2],
                                                 style: TextStyle(
                                                     fontWeight: FontWeight.w400,
                                                     fontSize: 15,
@@ -203,15 +205,17 @@ class MessageList extends StatelessWidget {
                                     ],
                                 ),
                                 Container(
-                                    //padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                                    //margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
+                                    padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                                    margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
                                     child: Text(
-                                        '8m',
+                                        messages[index][3],
                                         style: TextStyle(
                                             fontWeight: FontWeight.w400,
                                             fontSize: 15,
                                             color: Colors.black,
                                         ),
+                                        softWrap: true,
+                                        overflow: TextOverflow.clip
                                     ),
                                 ),
                             ],
