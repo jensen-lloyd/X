@@ -3,9 +3,7 @@
 Un-named cross-platform app built with Flutter.
 Is intended to bring a privacy-first, decentralised, and  suite of services to everyone!
 
-
-
-
+<br /> <br />
 
 
 ### Functions
@@ -34,11 +32,9 @@ Is intended to bring a privacy-first, decentralised, and  suite of services to e
 - [ ]  low-stimulation notifications & UI design
 
 
+<br /> <br />
 
-
-
-
-## To do:
+### To do
 - [ ]  Navigation:
 	- [X]  Add more dummy converastions and test scrolling in message menu
 	- [ ]  Rename messages to conversations
