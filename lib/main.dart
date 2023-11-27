@@ -127,20 +127,20 @@ class MessageMenu extends StatelessWidget {
 class MessageList extends StatelessWidget {
     //const MessageList({Key? key});
 
-    List<List<String>> messages = load_messages("sms")!; 
+    List<List<String>> conversations = load_messages("sms")!; 
 
     @override
     Widget build(BuildContext context) {
         return ListView.builder(
 
             
-            itemCount: messages.length,
+            itemCount: conversations.length,
             itemBuilder: (BuildContext context, int index) {
                 return InkWell(
 
 
                     onTap: () {
-            	        print('Message tapped!');
+            	        print('Conversation tapped!');
             	    },
             	    
                     child: Container(
@@ -163,7 +163,7 @@ class MessageList extends StatelessWidget {
                                     margin: EdgeInsets.fromLTRB(5, 11, 10, 11),
                                     child: CircleAvatar(
                                         radius: 30,
-                                        backgroundImage: Image.network(messages[index][1]).image,
+                                        backgroundImage: Image.network(conversations[index][1]).image,
                                     ),
                                 ),
                                 Column(
@@ -174,7 +174,7 @@ class MessageList extends StatelessWidget {
                                             margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
                                             width: (MediaQuery.of(context).size.width) * 0.7,
                                             child: Text(
-                                                messages[index][0],
+                                                conversations[index][0],
                                                 style: TextStyle(
                                                     fontWeight: FontWeight.w500,
                                                     fontSize: 20,
@@ -192,7 +192,7 @@ class MessageList extends StatelessWidget {
                                             width: (MediaQuery.of(context).size.width) * 0.7,
                                             height: 40,
                                             child: Text(
-                                                messages[index][2],
+                                                conversations[index][2],
                                                 style: TextStyle(
                                                     fontWeight: FontWeight.w400,
                                                     fontSize: 15,
@@ -208,7 +208,7 @@ class MessageList extends StatelessWidget {
                                     padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                                     margin: EdgeInsets.fromLTRB(0, 0, 5, 0),
                                     child: Text(
-                                        messages[index][3],
+                                       conversations[index][3],
                                         style: TextStyle(
                                             fontWeight: FontWeight.w400,
                                             fontSize: 15,
