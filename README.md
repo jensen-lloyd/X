@@ -35,7 +35,7 @@ Is intended to bring a privacy-first, decentralised, and  suite of services to e
 <br /> <br />
 
 ## To do
-####Navigation:
+#### Navigation
 	- [X]  Add more dummy converastions and test scrolling in message menu
 	- [ ]  Rename messages to conversations
 	- [ ]  Create settings page
@@ -54,7 +54,8 @@ Is intended to bring a privacy-first, decentralised, and  suite of services to e
 	- [ ]  Setup message previews & time since sent/received
 	- [ ]  Load contacts from device (name, number, photo)
 	- [ ]  Setup message sending 
-		- [ ]  vertical bar for sent, 2nd vert for delivered, both bold for read [not applicable to SMS, sadly lol]
+		- [ ]  vertical bar for sent, 2nd vert for delivered, both bold for read 
+		[read not applicable to SMS, sadly lol]
 	- [ ]  Setup message receiving
 	#####  Do notif stuff here
 	- [ ]  Highlight conversations with unread messages in message menu
