@@ -15,7 +15,8 @@ Is intended to bring a privacy-first, decentralised, and  suite of services to e
 - [ ]  sync between devices
 - [ ]  calendar
 - [ ]  notes
-    #### Support for other messaging services
+
+    Support for other messaging services
     - [ ]  discord
     - [ ]  RCS
     - [ ]  FB messenger
@@ -37,7 +38,7 @@ Is intended to bring a privacy-first, decentralised, and  suite of services to e
 
 
 
-##To do:
+## To do:
 - [ ]  Navigation:
 	- [ ]  Create settings page
 	- [ ]  Setup menu-drawer buttons to route between pages
