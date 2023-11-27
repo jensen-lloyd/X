@@ -75,7 +75,7 @@ class CustomAppBar extends StatelessWidget
               Padding(
                 padding: EdgeInsets.only(left: 65),
                 child: Text(
-                  'Discord',
+                  'SMS',
                   style: TextStyle(
                     fontSize: 26,
                   ),
@@ -116,7 +116,7 @@ class MessageMenu extends StatelessWidget {
 
 
     );
-    }
+  }
 }
 
 
