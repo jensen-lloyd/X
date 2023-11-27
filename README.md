@@ -42,7 +42,7 @@ Is intended to bring a privacy-first, decentralised, and  suite of services to e
 - [ ]  Setup menu-drawer buttons to route between pages
 - [ ]  Create conversation page 
 - [ ]  Get conversation in message menu to route to conversation page for that convo
-       Do SMS stuff here
+<br /> Do SMS stuff here
 - [ ]  Create platform dropdown (SMS & discord to start with)
 - [ ]  Create reminders option in menu-drawer
 - [ ]  Create reminders page
@@ -57,7 +57,7 @@ Is intended to bring a privacy-first, decentralised, and  suite of services to e
 		- [ ]  vertical bar for sent, 2nd vert for delivered, both bold for read 
 		[read not applicable to SMS, sadly lol]
 	- [ ]  Setup message receiving
-	#####  Do notif stuff here
+	       Do notif stuff here
 	- [ ]  Highlight conversations with unread messages in message menu
 	- [ ]  Create settings button for each convo (tap & hold)
 	- [ ]  Add option to mute convo (no notif)
