@@ -37,7 +37,7 @@ Is intended to bring a privacy-first, decentralised, and  suite of services to e
 ## To do
 #### Navigation
 - [X]  Add more dummy converastions and test scrolling in message menu
-- [ ]  Rename messages to conversations
+- [ ]  Rename *messages* variable to *conversations*
 - [ ]  Create settings page
 - [ ]  Setup menu-drawer buttons to route between pages
 - [ ]  Create conversation page 
@@ -49,7 +49,7 @@ Is intended to bring a privacy-first, decentralised, and  suite of services to e
 	
 <br />
 	
-- [ ]  SMS:
+- [ ]  **SMS**:
 	- [ ]  Load message history into conversation page (most recent first)
 	- [ ]  Setup message previews & time since sent/received
 	- [ ]  Load contacts from device (name, number, photo)
@@ -65,10 +65,15 @@ Is intended to bring a privacy-first, decentralised, and  suite of services to e
 
 <br />	
 	
-- [ ]  Notifications:
+- [ ]  **Notifications**:
 	- [ ]  Build notification listener service to create notification when message received
 	
 <br />
 	
-- [ ]  Reminders:
-	- [ ]  fdjsgfgdf
+- [ ]  **Reminders**:
+	- [ ]  create list view
+	- [ ]  load in reminders
+	- [ ]  create an add button
+	- [ ]  create an add reminder page - fields: name, description, frequency, loudness (alarm, notif, or silent)
+	- [ ]  build in a reminder listener into the notification service to trigger on time
+	
