@@ -82,6 +82,65 @@ class AppDrawer extends StatelessWidget {
 
           ListTile(
             leading: Icon(
+              Icons.forum,
+            ),
+            title: const Text('Notes'),
+            onTap: () {
+              Navigator.pop(context);
+            },
+          ),
+
+          ListTile(  
+            leading: Icon(
+              Icons.forum,
+            ),
+            title: const Text('Location'),   
+            onTap: () {
+              Navigator.pop(context);
+            },
+          ),
+
+          ListTile(  
+            leading: Icon(
+              Icons.forum,
+            ),
+            title: const Text('File transfer'),   
+            onTap: () {
+              Navigator.pop(context);
+            },
+          ),
+
+          ListTile(  
+            leading: Icon(
+              Icons.forum,
+            ),
+            title: const Text('File sharing'),   
+            onTap: () {
+              Navigator.pop(context);
+            },
+          ),
+
+          ListTile(  
+            leading: Icon(
+              Icons.forum,
+            ),
+            title: const Text('File backup'),   
+            onTap: () {
+              Navigator.pop(context);
+            },
+          ),
+
+          ListTile(  
+            leading: Icon(
+              Icons.forum,
+            ),
+            title: const Text('VPN'),   
+            onTap: () {
+              Navigator.pop(context);
+            },
+          ),
+          ListTile(
+            leading: Icon(
               Icons.settings,
             ),
             title: const Text('Settings'),
