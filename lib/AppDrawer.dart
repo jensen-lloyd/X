@@ -52,7 +52,7 @@ class AppDrawer extends StatelessWidget {
 
           ListTile(
             leading: Icon(
-              Icons.forum,
+              Icons.alarm,
             ),
             title: const Text('Alarms'),
             onTap: () {
@@ -62,7 +62,7 @@ class AppDrawer extends StatelessWidget {
 
           ListTile(
             leading: Icon(
-              Icons.forum,
+              Icons.notifications,
             ),
             title: const Text('Reminders'),
             onTap: () {
@@ -72,7 +72,7 @@ class AppDrawer extends StatelessWidget {
 
           ListTile(
             leading: Icon(
-              Icons.forum,
+              Icons.calendar_month,
             ),
             title: const Text('Calendar'),
             onTap: () {
@@ -82,9 +82,9 @@ class AppDrawer extends StatelessWidget {
 
           ListTile(
             leading: Icon(
-              Icons.forum,
+              Icons.description,
             ),
-            title: const Text('Notes'),
+            title: const Text('Notes/Todo list'),
             onTap: () {
               Navigator.pop(context);
             },
@@ -92,7 +92,7 @@ class AppDrawer extends StatelessWidget {
 
           ListTile(  
             leading: Icon(
-              Icons.forum,
+              Icons.person_pin_circle,
             ),
             title: const Text('Location'),   
             onTap: () {
@@ -102,7 +102,7 @@ class AppDrawer extends StatelessWidget {
 
           ListTile(  
             leading: Icon(
-              Icons.forum,
+              Icons.send, //use p2p icon if possible in future
             ),
             title: const Text('File transfer'),   
             onTap: () {
@@ -112,7 +112,7 @@ class AppDrawer extends StatelessWidget {
 
           ListTile(  
             leading: Icon(
-              Icons.forum,
+              Icons.cloud_sync,
             ),
             title: const Text('File sharing'),   
             onTap: () {
@@ -122,7 +122,7 @@ class AppDrawer extends StatelessWidget {
 
           ListTile(  
             leading: Icon(
-              Icons.forum,
+              Icons.backup,
             ),
             title: const Text('File backup'),   
             onTap: () {
@@ -132,7 +132,7 @@ class AppDrawer extends StatelessWidget {
 
           ListTile(  
             leading: Icon(
-              Icons.forum,
+              Icons.vpn_lock,
             ),
             title: const Text('VPN'),   
             onTap: () {
