@@ -38,8 +38,8 @@ Is intended to bring a privacy-first, decentralised, and  suite of services to e
 #### Navigation
 - [X]  Add more dummy converastions and test scrolling in message menu
 - [X]  Rename *messages* variable to *conversations*
-- [ ]  Create settings page
-- [ ]  Setup menu-drawer buttons to route between pages
+- [X]  Create settings page
+- [X]  Setup menu-drawer buttons to route between pages
 - [ ]  Create conversation page 
 - [ ]  Get conversation in message menu to route to conversation page for that convo
 <br /> **Do SMS stuff here**

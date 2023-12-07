@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'HomePage.dart';
 import 'MessageMenu.dart';
+import 'SettingsMenu.dart';
 
 
 class AppDrawer extends StatelessWidget {
@@ -85,7 +86,11 @@ class AppDrawer extends StatelessWidget {
             ),
             title: const Text('Settings'),
             onTap: () {
-              Navigator.pop(context);
+                Navigator.pop(context);
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => SettingsMenu()),
+                );
             },
           ),
         ],
