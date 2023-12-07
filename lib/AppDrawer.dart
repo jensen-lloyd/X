@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'HomePage.dart';
+import 'MessageMenu.dart';
+
 
 class AppDrawer extends StatelessWidget {
   @override
@@ -17,6 +20,20 @@ class AppDrawer extends StatelessWidget {
                 ),
               ),
             ),
+
+            ListTile(
+              leading: Icon(
+                Icons.home,
+            ),
+            title: const Text('Home'),
+            onTap: () {
+                Navigator.pop(context);
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => HomePage()),
+                );
+            },
+          ),
             
           ListTile(
             leading: Icon(
@@ -24,9 +41,14 @@ class AppDrawer extends StatelessWidget {
             ),
             title: const Text('Messages'),
             onTap: () {
-              Navigator.pop(context);
+                Navigator.pop(context);
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MessageMenu()),
+                );
             },
           ),
+
           ListTile(
             leading: Icon(
               Icons.forum,
@@ -36,6 +58,7 @@ class AppDrawer extends StatelessWidget {
               Navigator.pop(context);
             },
           ),
+
           ListTile(
             leading: Icon(
               Icons.forum,
@@ -45,6 +68,7 @@ class AppDrawer extends StatelessWidget {
               Navigator.pop(context);
             },
           ),
+
           ListTile(
             leading: Icon(
               Icons.forum,
@@ -54,6 +78,7 @@ class AppDrawer extends StatelessWidget {
               Navigator.pop(context);
             },
           ),
+
           ListTile(
             leading: Icon(
               Icons.settings,

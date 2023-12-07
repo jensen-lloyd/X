@@ -6,7 +6,7 @@ import 'AppDrawer.dart';
 
 
 
-class MessageAppBar extends StatelessWidget
+class MessageMenuAppBar extends StatelessWidget
 {
     @override
     Widget build(BuildContext context)
@@ -60,10 +60,10 @@ class MessageMenu extends StatelessWidget {
     return Scaffold(
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(50),
-        child: MessagesAppBar(),
+        child: MessageMenuAppBar(),
         ),
         
-      drawer: DrawerContent(),  
+      drawer: AppDrawer(),  
         
         
       body: MessageList(),

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'functions.dart';
 
 import 'AppDrawer.dart';
-import 'CustomAppBar.dart';
 
 
 class HomeAppBar extends StatelessWidget
@@ -28,18 +27,10 @@ class HomeAppBar extends StatelessWidget
               Padding(
                 padding: EdgeInsets.only(left: 65),
                 child: Text(
-                  'SMS',
+                  'Home',
                   style: TextStyle(
                     fontSize: 26,
                   ),
-                ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(left: 0),
-                child: Icon(
-                  Icons.arrow_drop_down,
-                  size: 20,
-                  color: Colors.lightBlue[100],
                 ),
               ),
             ],
