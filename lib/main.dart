@@ -37,6 +37,33 @@ class DrawerContent extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(
+              Icons.forum,
+            ),
+            title: const Text('Alarms'),
+            onTap: () {
+              Navigator.pop(context);
+            },
+          ),
+          ListTile(
+            leading: Icon(
+              Icons.forum,
+            ),
+            title: const Text('Reminders'),
+            onTap: () {
+              Navigator.pop(context);
+            },
+          ),
+          ListTile(
+            leading: Icon(
+              Icons.forum,
+            ),
+            title: const Text('Calendar'),
+            onTap: () {
+              Navigator.pop(context);
+            },
+          ),
+          ListTile(
+            leading: Icon(
               Icons.settings,
             ),
             title: const Text('Settings'),
