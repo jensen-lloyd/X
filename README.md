@@ -40,7 +40,9 @@ Is intended to bring a privacy-first, decentralised, and  suite of services to e
 - [X]  Rename *messages* variable to *conversations*
 - [X]  Create settings page
 - [X]  Setup menu-drawer buttons to route between pages
-- [ ]  Create conversation page 
+- [ ]  Create conversation page
+- [ ]  Fix icons in drawer menu
+- [ ]  Change colour of icons and text in Drawer Menu to reflect complete (black), in progress (grey), and non-functional (light grey) pages
 - [ ]  Get conversation in message menu to route to conversation page for that convo
 <br /> **Do SMS stuff here**
 - [ ]  Create platform dropdown (SMS & discord to start with)
