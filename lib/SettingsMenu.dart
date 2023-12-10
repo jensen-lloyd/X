@@ -112,7 +112,7 @@ class SettingsPageContent extends StatelessWidget {
                                     
                                     //setting description
                                     Container(
-                                        padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                                        padding: EdgeInsets.fromLTRB(0, 0, 0, 5),
                                         margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
                                         width: (MediaQuery.of(context).size.width) * 0.5,
                                         //height: 40,

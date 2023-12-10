@@ -13,7 +13,7 @@ class AppDrawer extends StatelessWidget {
                 padding: EdgeInsets.zero,
                 children: [
                     Container(
-                        padding: EdgeInsets.fromLTRB(20, 20, 0, 0),
+                        padding: EdgeInsets.fromLTRB(60, 30, 0, 0),
                         decoration: BoxDecoration(
                             color: Colors.lightBlue[600],
                             border: Border(
@@ -28,7 +28,7 @@ class AppDrawer extends StatelessWidget {
                             "X",
                             style: TextStyle(
                                 fontWeight: FontWeight.w500,
-                                fontSize: 36,
+                                fontSize: 38,
                             ),
                         ),
                     ),
