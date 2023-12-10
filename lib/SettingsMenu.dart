@@ -82,11 +82,6 @@ class SettingsPageContent extends StatelessWidget {
                         
                         
                     child: Row(
-                    
-                    
-                    
-                    
-                    
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                         

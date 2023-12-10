@@ -12,149 +12,338 @@ class AppDrawer extends StatelessWidget {
       child: ListView(
         padding: EdgeInsets.zero,
         children: [
-          const DrawerHeader(
+          Container(
+            padding: EdgeInsets.fromLTRB(20, 20, 0, 0),
+            decoration: BoxDecoration(
+                color: Colors.lightBlue[600],
+                border: Border(
+                    bottom: BorderSide(
+                        width: 3,
+                        color: Color.fromRGBO(110, 110, 120, 1.0),
+                    ),
+                ),
+            ),
+                        
             child: Text(
-                'Features? \nApplets? \nSegments?',
+                "X",
                 style: TextStyle(
-                    //fontWeight: FontWeight.w600,
-                    fontSize: 32,
+                    fontWeight: FontWeight.w500,
+                    fontSize: 36,
                 ),
               ),
             ),
 
-            ListTile(
-              leading: Icon(
-                Icons.home,
-            ),
-            title: const Text('Home'),
-            onTap: () {
-                Navigator.pop(context);
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => HomePage()),
-                );
-            },
-          ),
             
-          ListTile(
-            leading: Icon(
-              Icons.forum,
+            ListTile(
+                leading: Icon(
+                    Icons.home,
+                ),
+                
+                title: const Text(
+                    "Home",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w500,
+                        fontSize: 16,
+                        color: Colors.black,
+                    ),
+                ),
+                                           
+                onTap: () {
+                    Navigator.pop(context);
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => HomePage()),
+                    );
+                },
             ),
-            title: const Text('Messages'),
-            onTap: () {
-                Navigator.pop(context);
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => MessageMenu()),
-                );
-            },
-          ),
-
-          ListTile(
-            leading: Icon(
-              Icons.alarm,
+            
+            
+            
+            ListTile(
+                leading: Icon(
+                    Icons.forum,
+                ),
+                
+                title: const Text(
+                    "Messages",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w500,
+                        fontSize: 16,
+                        color: Colors.black,
+                    ),
+                ),
+                                           
+                onTap: () {
+                    Navigator.pop(context);
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => MessageMenu()),
+                    );
+                },
             ),
-            title: const Text('Alarms'),
-            onTap: () {
-              Navigator.pop(context);
-            },
-          ),
-
-          ListTile(
-            leading: Icon(
-              Icons.notifications,
+            
+            
+            
+            ListTile(
+                leading: Icon(
+                    Icons.alarm,
+                ),
+                
+                title: const Text(
+                    "Alarms",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 16,
+                        color: Colors.black,
+                        fontStyle: FontStyle.italic
+                    ),
+                ),
+                                           
+                onTap: () {
+                    Navigator.pop(context);
+                },
             ),
-            title: const Text(
-            	"Reminders",
-            	style: TextStyle(
-            	    ),
-            onTap: () {
-              Navigator.pop(context);
-            },
-          ),
-
-          ListTile(
-            leading: Icon(
-              Icons.calendar_month,
+            
+            
+            
+            ListTile(
+                leading: Icon(
+                    Icons.notifications,
+                ),
+                
+                title: const Text(
+                    "Reminders",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 16,
+                        color: Colors.black,
+                        fontStyle: FontStyle.italic
+                    ),
+                ),
+                                           
+                onTap: () {
+                    Navigator.pop(context);
+                },
             ),
-            title: const Text('Calendar'),
-            onTap: () {
-              Navigator.pop(context);
-            },
-          ),
-
-          ListTile(
-            leading: Icon(
-              Icons.description,
+            
+            
+            
+            ListTile(
+                leading: Icon(
+                    Icons.calendar_month,
+                ),
+                
+                title: const Text(
+                    "Calendar",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 16,
+                        color: Colors.black,
+                        fontStyle: FontStyle.italic
+                    ),
+                ),
+                                           
+                onTap: () {
+                    Navigator.pop(context);
+                },
             ),
-            title: const Text('Notes/Todo list'),
-            onTap: () {
-              Navigator.pop(context);
-            },
-          ),
-
-          ListTile(  
-            leading: Icon(
-              Icons.person_pin_circle,
+            
+            
+            
+            ListTile(
+                leading: Icon(
+                    Icons.description,
+                ),
+                
+                title: const Text(
+                    "Notes/To-Do List",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 16,
+                        color: Colors.black,
+                        fontStyle: FontStyle.italic
+                    ),
+                ),
+                                           
+                onTap: () {
+                    Navigator.pop(context);
+                },
             ),
-            title: const Text('Location'),   
-            onTap: () {
-              Navigator.pop(context);
-            },
-          ),
-
-          ListTile(  
-            leading: Icon(
-              Icons.send, //use p2p icon if possible in future
+            
+            
+            
+            ListTile(
+                leading: Icon(
+                    Icons.person_pin_circle,
+                ),
+                
+                title: const Text(
+                    "Location",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 16,
+                        color: Colors.black,
+                        fontStyle: FontStyle.italic
+                    ),
+                ),
+                                           
+                onTap: () {
+                    Navigator.pop(context);
+                },
             ),
-            title: const Text('File transfer'),   
-            onTap: () {
-              Navigator.pop(context);
-            },
-          ),
-
-          ListTile(  
-            leading: Icon(
-              Icons.cloud_sync,
+            
+            
+            
+            ListTile(
+                leading: Icon(
+                    Icons.send,
+                ),
+                
+                title: const Text(
+                    "File transfer",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 16,
+                        color: Colors.black,
+                        fontStyle: FontStyle.italic
+                    ),
+                ),
+                                           
+                onTap: () {
+                    Navigator.pop(context);
+                },
             ),
-            title: const Text('File sharing'),   
-            onTap: () {
-              Navigator.pop(context);
-            },
-          ),
-
-          ListTile(  
-            leading: Icon(
-              Icons.backup,
+            
+            
+            
+            ListTile(
+                leading: Icon(
+                    Icons.cloud_sync,
+                ),
+                
+                title: const Text(
+                    "File sharing",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 16,
+                        color: Colors.black,
+                        fontStyle: FontStyle.italic
+                    ),
+                ),
+                                           
+                onTap: () {
+                    Navigator.pop(context);
+                },
             ),
-            title: const Text('File backup'),   
-            onTap: () {
-              Navigator.pop(context);
-            },
-          ),
-
-          ListTile(  
-            leading: Icon(
-              Icons.vpn_lock,
+            
+            
+            
+            ListTile(
+                leading: Icon(
+                    Icons.backup,
+                ),
+                
+                title: const Text(
+                    "File backup",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 16,
+                        color: Colors.black,
+                        fontStyle: FontStyle.italic
+                    ),
+                ),
+                                           
+                onTap: () {
+                    Navigator.pop(context);
+                },
             ),
-            title: const Text('VPN'),   
-            onTap: () {
-              Navigator.pop(context);
-            },
-          ),
-          ListTile(
-            leading: Icon(
-              Icons.settings,
+            
+            
+            
+            ListTile(
+                leading: Icon(
+                    Icons.vpn_lock,
+                ),
+                
+                title: const Text(
+                    "VPN",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 16,
+                        color: Colors.black,
+                        fontStyle: FontStyle.italic
+                    ),
+                ),
+                                           
+                onTap: () {
+                    Navigator.pop(context);
+                },
             ),
-            title: const Text('Settings'),
-            onTap: () {
-                Navigator.pop(context);
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => SettingsMenu()),
-                );
-            },
-          ),
+            
+            
+            
+            ListTile(
+                leading: Icon(
+                    Icons.settings,
+                ),
+                
+                title: const Text(
+                    "App preferences",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w500,
+                        fontSize: 16,
+                        color: Colors.black,
+                    ),
+                ),
+                                           
+                onTap: () {
+                    Navigator.pop(context);
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => SettingsMenu()),
+                    );
+                },
+            ),
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+          
+          
+          
+          
         ],
       ),
     );
