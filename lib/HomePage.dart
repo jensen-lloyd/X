@@ -115,7 +115,8 @@ class HomePageContent extends StatelessWidget {
                                     child: Text(
                                         """X is a multi-function cross-platform app that offers a variety of features to enable users to take back control of their digital privacy. 
                                         \nX was built with home-labbers in mind, easily take your life out of the cloud down to your own hardware, back under your control. 
-                                        \nOur mission is to enable you to easily setup as many services as possible from a single point on your server, and access them from a single app from all your devices.""",
+                                        \nThe goal of X is to enable you to easily setup as many services as possible from a single point on your server, and access them from a single app from all your devices.                                       
+                                        \nOur aim is to bring a decentralised and E2EE suite of services to everyone, with a privacy-first focus!""",
                                         style: TextStyle(
                                             fontWeight: FontWeight.w400,
                                             fontSize: 15,

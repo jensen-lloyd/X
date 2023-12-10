@@ -1,7 +1,7 @@
 # X app
 
 Un-named cross-platform app built with Flutter.
-Is intended to bring a privacy-first, decentralised, and  suite of services to everyone!
+Our aim is to bring a decentralised and E2EE suite of services to everyone, with a privacy-first focus!
 
 <br /> <br />
 
@@ -13,8 +13,9 @@ Is intended to bring a privacy-first, decentralised, and  suite of services to e
 - [ ]  sync between devices
 - [ ]  calendar
 - [ ]  notes
+- [ ]  1st party messaging service
 
-    Support for other messaging services
+    Support for other messaging services, such as:
     - [ ]  discord
     - [ ]  RCS
     - [ ]  FB messenger
@@ -23,7 +24,7 @@ Is intended to bring a privacy-first, decentralised, and  suite of services to e
     - [ ]  Whatsapp
     - [ ]  iMessage
     - [ ]  Snapchat
-- [ ]  1st party messaging service
+
 - [ ]  location sharing
 - [ ]  file transfer (P2P transfer over BT, WiFi, internet)
 - [ ]  file sharing (short-term storage)
