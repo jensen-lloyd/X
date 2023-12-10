@@ -42,6 +42,8 @@ Is intended to bring a privacy-first, decentralised, and  suite of services to e
 - [X]  Setup menu-drawer buttons to route between pages
 - [ ]  Create conversation page
 - [X]  Fix icons in drawer menu
+- [ ]  Create format/template for settings menu (list of items with toggle/options)
+- [ ]  Create list of settings options
 - [ ]  Change colour of icons and text in Drawer Menu to reflect complete (black), in progress (grey), and non-functional (light grey) pages
 - [ ]  Get conversation in message menu to route to conversation page for that convo
 <br /> **Do SMS stuff here**
