@@ -1,9 +1,10 @@
 # X app
 
 Un-named cross-platform app built with Flutter.
+
 Our aim is to bring a decentralised and E2EE suite of services to everyone, with a privacy-first focus!
 
-<br /> <br />
+<br />
 
 
 ## Features
