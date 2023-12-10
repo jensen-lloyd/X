@@ -64,7 +64,10 @@ class AppDrawer extends StatelessWidget {
             leading: Icon(
               Icons.notifications,
             ),
-            title: const Text('Reminders'),
+            title: const Text(
+            	"Reminders",
+            	style: TextStyle(
+            	    ),
             onTap: () {
               Navigator.pop(context);
             },
