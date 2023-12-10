@@ -6,7 +6,7 @@ import 'SettingsMenu.dart';
 
 
 class AppDrawer extends StatelessWidget {
-  @override
+    @override
   Widget build(BuildContext context) {
     return Drawer(
       child: ListView(
@@ -33,6 +33,9 @@ class AppDrawer extends StatelessWidget {
               ),
             ),
 
+
+
+            //Drawer menu items
             
             ListTile(
                 leading: Icon(

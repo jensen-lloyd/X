@@ -45,11 +45,10 @@ Is intended to bring a privacy-first, decentralised, and  suite of services to e
 - [ ]  Change Settings and Home pages to be more efficient (turn each box into it's own widget that can then be populated with a title and info, instead of writing out padding, decoration and other formatting stuff manually)
 - [ ]  Create format/template for settings menu (list of items with toggle/options dropdown)
 - [ ]  Create list of settings options
-- [ ]  Change colour of icons and text in Drawer Menu to reflect complete (black), in progress (grey), and non-functional (light grey) pages
+- [X]  Change colour of icons and text in Drawer Menu to reflect complete (black), in progress (grey), and non-functional (light grey) pages
 - [ ]  Get conversation in message menu to route to conversation page for that convo
 <br /> **Do SMS stuff here**
 - [ ]  Create platform dropdown (SMS & discord to start with)
-- [ ]  Create reminders option in menu-drawer
 - [ ]  Create reminders page
 	
 <br />
