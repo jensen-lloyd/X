@@ -4,7 +4,7 @@ Un-named cross-platform app built with Flutter.
 
 Our aim is to bring a decentralised and E2EE suite of services to everyone, with a privacy-first focus!
 
-<br />
+<br>
 
 ## Features
 - [ ]  alarms
@@ -33,7 +33,7 @@ Our aim is to bring a decentralised and E2EE suite of services to everyone, with
 - [ ]  low-stimulation notifications & UI design
 
 
-<br /> <br />
+<br> <br>
 
 ## To do
 #### Navigation
@@ -48,11 +48,11 @@ Our aim is to bring a decentralised and E2EE suite of services to everyone, with
 - [ ]  Create list of settings options
 - [X]  Change colour of icons and text in Drawer Menu to reflect complete (black), in progress (grey), and non-functional (light grey) pages
 - [ ]  Get conversation in message menu to route to conversation page for that convo
-<br /> **Do SMS stuff here**
+<br> **Do SMS stuff here**
 - [ ]  Create platform dropdown (SMS & discord to start with)
 - [ ]  Create reminders page
 	
-<br />
+<br>
 	
 - [ ]  **SMS**:
 	- [ ]  Load message history into conversation page (most recent first)
@@ -62,18 +62,18 @@ Our aim is to bring a decentralised and E2EE suite of services to everyone, with
 		- [ ]  vertical bar for sent, 2nd vert for delivered, both bold for read 
 		[read not applicable to SMS, sadly lol]
 	- [ ]  Setup message receiving
-	       <br /> **Do notification stuff here**
+	       <br> **Do notification stuff here**
 	- [ ]  Highlight conversations with unread messages in message menu
 	- [ ]  Create settings button for each convo (tap & hold)
 	- [ ]  Add option to mute convo (no notif)
 	- [ ]  
 
-<br />	
+<br>	
 	
 - [ ]  **Notifications**:
 	- [ ]  Build notification listener service to create notification when message received
 	
-<br />
+<br>
 	
 - [ ]  **Reminders**:
 	- [ ]  create list view
