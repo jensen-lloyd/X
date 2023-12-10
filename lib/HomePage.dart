@@ -137,6 +137,70 @@ class HomePageContent extends StatelessWidget {
                         
                         
                         
+                    //Why X?
+                    Container(
+                        decoration: BoxDecoration(
+                            color: Color.fromRGBO(225, 225, 225, 1.0),
+                            border: Border(
+                                bottom: BorderSide(
+                                    width: 3,
+                                    color: Color.fromRGBO(110, 110, 120, 1.0),
+                                ),
+                            ),
+                        ),
+                    
+
+                            
+                        child: Column(
+                            children: [
+                                //Section name
+                                Container(
+                                    padding: EdgeInsets.fromLTRB(0, 10, 0, 5),
+                                    margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                                    //width: (MediaQuery.of(context).size.width) * 0.9,
+                                    child: Text(
+                                        "Why X?",
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.w500,
+                                            fontSize: 20,
+                                            color: Colors.black,
+                                        ),
+                                        softWrap: true,
+                                        overflow: TextOverflow.ellipsis,
+                                    ),
+                                ),
+                                
+                                //Section description/info
+                                Container(
+                                    padding: EdgeInsets.fromLTRB(15, 5, 10, 10),
+                                    margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                                    //width: (MediaQuery.of(context).size.width) * 0.9,
+                                    //height: 40,
+                                    child: Text(
+                                        """X is a multi-function cross-platform app that offers a variety of features to enable users to take back control of their digital privacy. 
+                                        \nX was built with home-labbers in mind, easily take your life out of the cloud down to your own hardware, back under your control. 
+                                        \nOur mission is to enable you to easily setup as many services as possible from a single point on your server, and access them from a single app from all your devices.""",
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.w400,
+                                            fontSize: 15,
+                                            color: Colors.black,
+                                       ),
+                                        softWrap: true,
+                                        overflow: TextOverflow.clip,
+                                    ),
+                                ),
+                            ],
+                        ),
+                    ),
+                        
+                        
+                        
+                       
+                       
+                       
+                       
+                                               
+                        
                     //How X works
                     Container(
                         decoration: BoxDecoration(
@@ -177,9 +241,7 @@ class HomePageContent extends StatelessWidget {
                                     //width: (MediaQuery.of(context).size.width) * 0.9,
                                     //height: 40,
                                     child: Text(
-                                        """X is a multi-function cross-platform app that offers a variety of features to enable users to take back control of their digital privacy. 
-                                        \nX was built with home-labbers in mind, easily take your life out of the cloud down to your own hardware, back under your control. 
-                                        \nOur mission is to enable you to easily setup as many services as possible from a single point on your server, and access them from a single app from all your devices.""",
+                                        """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""",
                                         style: TextStyle(
                                             fontWeight: FontWeight.w400,
                                             fontSize: 15,
@@ -192,9 +254,11 @@ class HomePageContent extends StatelessWidget {
                             ],
                         ),
                     ),
-                        
-                        
-                        
+                       
+                       
+                       
+                       
+                       
                         
                         
                         
