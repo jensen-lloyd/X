@@ -66,7 +66,7 @@ Our aim is to bring a decentralised and E2EE suite of services to everyone, with
 	- [ ]  Highlight conversations with unread messages in message menu
 	- [ ]  Create settings button for each convo (tap & hold)
 	- [ ]  Add option to mute convo (no notif)
-	- [ ]  Add support for Apple's reactions to show up as emoji's on bottom right hand corner of messages
+	- [ ]  Add support for Apple's reactions to show up as emojis on bottom right hand corner of messages
 
 <br>	
 	
