@@ -300,7 +300,7 @@ class AppDrawer extends StatelessWidget {
                         ),
                         
                         title: const Text(
-                            "Preferences",
+                            "App Settings",
                             style: TextStyle(
                                 fontWeight: FontWeight.w500,
                                 fontSize: 16,
